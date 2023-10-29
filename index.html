@@ -136,14 +136,18 @@
 
 <body>
     <!-- Cover page -->
-    <amp-story supports-landscape standalone title="Paul  Chris Luke" publisher="Paul Chris Luke" publisher-logo-src="assets/AMP-Brand-White-Icon.svg" poster-portrait-src="assets/20150508_4804_V08J_Music_to_Their_Souls_1280_Vertical.jpg">
+    <amp-story supports-landscape standalone title="尋山車窗" publisher="Ming-Yen Su" publisher-logo-src="assets/AMP-Brand-White-Icon.svg" poster-portrait-src="assets/cover.jpg">
         <amp-story-page id="cover">
             <amp-story-grid-layer template="fill">
-                <amp-video autoplay loop
+                <amp-video controls 
+                autoplay
               width="1920" height="1280"
               poster="assets/cover.jpg"
               layout="responsive">
             <source src="assets/videoplayback.mp4" type="video/mp4">
+            <div fallback>
+                <p>This browser does not support the video element.</p>
+              </div>
         </amp-video>
           </amp-story-grid-layer>
         </amp-story-page>
