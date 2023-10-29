@@ -13,27 +13,18 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: 100vh; /* Ensure a minimum height to keep content centered */
-      }
-
-      .video-container {
-        position: relative;
-        padding-bottom: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100%) */
-        width: 100%;
+        height: 100vh;
       }
 
       iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+        max-width: 100%;
+        height: auto;
       }
     </style>
   </head>
 
   <body>
-    <div class="video-container">
+    <div>
       <iframe
         width="720"
         height="405"
